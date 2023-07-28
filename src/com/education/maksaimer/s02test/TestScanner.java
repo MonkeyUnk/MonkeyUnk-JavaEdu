@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class TestScanner {
     public static void main(String[] args) {
         int n = requestNumber ();
-        for (int b = 0; b < n; b++) {
-            if (b % 2 != 0) {
-                System.out.println(b);
+        for (int i = 0; i < n; i++) {
+            if (i % 2 != 0) {
+                System.out.println(i);
             }
         }
 
