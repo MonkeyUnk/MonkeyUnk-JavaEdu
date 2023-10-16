@@ -9,6 +9,13 @@ public class Box {
     double length;
     double height;
 
+    void setDimens (double weight, double length, double height) {
+        this.length = length;
+        this.height = height;
+        this.weight = weight;
+    }
+
+
     double getVolume () {
         return weight*length*height;
 
