@@ -4,16 +4,13 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Box box1 = new Box();
-        box1.setDimens(10,10,10);
+        Box box1 = new Box(13,12.5,16.9);
         box1.showVolume();
 
         Box box2 = new Box();
-        box2.setDimens(11.5,12.5,13.5);
         box2.showVolume();
 
-        Box box3 = new Box();
-        box3.setDimens(1,1,1);
+        Box box3 = new Box (0.555,6.31,12.8994);
         box3.showVolume();
     }
 }

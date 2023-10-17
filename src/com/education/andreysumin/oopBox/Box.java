@@ -1,13 +1,23 @@
 package com.education.andreysumin.oopBox;
 
-import java.util.Arrays;
-
-import static java.lang.System.*;
-
 public class Box {
     double weight;
     double length;
     double height;
+
+    Box ()  {
+        this.length = 10;
+        this.height = 10;
+        this.weight = 10;
+    }
+
+    Box(double weight, double length, double height)  {
+        this.length = length;
+        this.height = height;
+        this.weight = weight;
+    }
+
+
 
     void setDimens (double weight, double length, double height) {
         this.length = length;
@@ -16,11 +26,12 @@ public class Box {
     }
 
 
-    double getVolume () {
-        return weight*length*height;
+    double getVolume() {
+        return weight * length * height;
 
     }
-    void showVolume () {
+
+    void showVolume() {
         System.out.println("volume: " + getVolume());
 
     }
