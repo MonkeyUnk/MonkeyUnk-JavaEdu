@@ -4,13 +4,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Box box1 = new Box(13,12.5,16.9);
-        box1.showVolume();
+        Box current = new Box(12,12,12);
+        Box another = new Box(10,100,12);
+        current.compare(another);
 
-        Box box2 = new Box();
-        box2.showVolume();
-
-        Box box3 = new Box (0.555,6.31,12.8994);
-        box3.showVolume();
     }
 }
