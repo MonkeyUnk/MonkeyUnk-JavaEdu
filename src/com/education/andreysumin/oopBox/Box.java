@@ -51,13 +51,15 @@ public class Box {
     int compare(Box another) {
         double currentVolume = getVolume();
         double anotherVolume = another.getVolume();
+        int result;
         if (currentVolume > anotherVolume) {
-            return 1;
+            result = 1;
         } else if (currentVolume < anotherVolume) {
-            return -1;
+            result = -1;
         } else {
-            return 0;
+            result =  0;
         }
+        return result;
     }
 }
 
