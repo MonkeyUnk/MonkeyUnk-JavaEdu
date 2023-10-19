@@ -11,6 +11,9 @@ public class Box {
         this.weight = 10;
     }
 
+    Box(Box another) {
+        this(another.length, another.height, another.weight);
+    }
     Box(double weight, double length, double height) {
         this.length = length;
         this.height = height;
@@ -61,5 +64,12 @@ public class Box {
         }
         return result;
     }
+    Box copy () {
+        return new Box(this.weight,this.height,this.length);
+    }
+    Box increase () {
+        return new Box(weight*2,length*2,height*2);
+    }
 }
+
 
