@@ -3,6 +3,7 @@ package com.education.zaurtregulov.demo;
 public class Main {
     public static void main(String[] args) {
 
+
         Student student1 = new Student(12, "Vasiliy", "Popov", 123,
                 23.4,
                 41.2,
@@ -17,7 +18,10 @@ public class Main {
                 2144.4,
                 4231.2,
                 2513.2);
-
+        Student student4 = new Student();
+        student4.name = "Holly";
+        Student student5 = new Student(25,"Ivanov");
+        System.out.println(student4.surname+" "+ student4.name+" "+student5.surname+ " "+ student5.name);
         Main main=new Main();
         main.getArithmeticMiddleValue(student2);
         main.getArithmeticMiddleValue(student1);
@@ -31,4 +35,5 @@ public class Main {
 
         System.out.println("Arithmetic Middle Value: " + value);
     }
+
 }
