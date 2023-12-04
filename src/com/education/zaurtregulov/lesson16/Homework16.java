@@ -1,0 +1,21 @@
+package com.education.zaurtregulov.lesson16;
+
+public class Homework16 {
+    static void email(String s1) {
+        int a = 0; //позиция символа @
+        int b = 0; //позиция символа .
+        int c = 0; //позиция символа ;
+        while (c < s1.length() - 1) {
+            a = s1.indexOf('@', c);
+            b = s1.indexOf('.', c);
+            c = s1.indexOf(';', c + 1);
+            System.out.println(s1.substring(a + 1, b));
+
+        }
+    }
+
+
+    public static void main(String[] args) {
+        email("au@gmail.com;ty@yandex.ru;pjhhg@mail.ru;jkhk@icloud.com;");
+    }
+}
