@@ -26,6 +26,8 @@ public class Test2 {
         StringBuilder sb1 = new StringBuilder("hello world");
         System.out.println(sb1.append(arrays,2,3));
         System.out.println(sb1.insert(2,arrays,1,3));
+ 
+
     }
 
     public static void maxmin(double[] array1) {
