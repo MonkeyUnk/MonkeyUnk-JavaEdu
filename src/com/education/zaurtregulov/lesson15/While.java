@@ -14,8 +14,8 @@ public class While {
         }
         int a1 = 5;
         while (++a1<10) {
-            System.out.println(a1);
-            a1++;
+            System.out.println(a1); //sout 6,8,10-end
+            a1++; //7,9
         }
 //        внимание на место переменной!!! (см. ниже sout)
         int a2 = 5;
@@ -45,7 +45,8 @@ public class While {
             }
             hour++;
         } while (hour < 24);
-        time();
+//        time();
+        timer();
     }
     static void time () {
         OUTER:
@@ -56,6 +57,26 @@ public class While {
                 System.out.println(hour+":"+minute);
                 minute++;
             }
+        }
+    }
+    static void timer () {
+        int hour = 0;
+        OUTER:
+        while (hour <= 2) {
+            int minute = -1;
+            MIDDLE:
+            do {
+                minute++;
+
+                int second = 0;
+                INNER:
+                while (second < 60) {
+                    System.out.println(hour + ":" + minute + ":" + second);
+                    second++;
+                }
+            }
+            while (minute < 60) ;
+            hour++;
         }
     }
 }

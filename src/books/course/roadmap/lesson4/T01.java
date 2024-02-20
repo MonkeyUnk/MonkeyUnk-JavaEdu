@@ -1,8 +1,8 @@
-package books.course.roadmap;
+package books.course.roadmap.lesson4;
 
 import java.util.Scanner;
 
-public class Lesson4 {
+public class T01 {
 //    Напишите консольную программу, которая выводит пользователю сообщение
 //    "Введите номер операции: 1.Сложение 2.Вычитание 3.Умножение".
 //    Рядом с названием каждой операции указан ее номер, например, операция вычитания имеет номер 2.

@@ -1,8 +1,8 @@
-package books.course.roadmap;
+package books.course.roadmap.lesson4;
 
 import java.util.Scanner;
 
-public class T01 {
+public class getFactorial {
     //    Ввести с клавиатуры целое число. Вывести в консоль его факториал.
     public static void main(String[] args) {
 

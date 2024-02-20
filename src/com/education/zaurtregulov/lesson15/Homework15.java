@@ -6,22 +6,29 @@ public class Homework15 {
         OUTER:
         while (hour < 6) {
             hour++;
-            int minutes = 0;
+            int minutes = -1;
 
             MIDLE:
             do {
 
                 minutes++;
-            }
-            while (minutes < 60);
+                if (hour > 1 && minutes % 10 == 0) {
+                    break OUTER;
+                }
+                int second = 0;
 
-            int second = 0;
-            INNERT:
-            while (second * hour > minutes) {
-                second++;
-
+                INNER:
+                while (second < 60) {
+                    if (second * hour > minutes) {
+                        continue MIDLE;
+                    }
+                    System.out.println(hour + ":" + minutes + ":" + second);
+                    second++;
+                }
             }
-            System.out.println(hour + ":" + minutes + ":" + second);
+                while (minutes < 59) ;
+                hour++;
+
 
         }
     }

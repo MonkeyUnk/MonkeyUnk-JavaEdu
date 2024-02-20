@@ -6,12 +6,22 @@ public class Stepik {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
+        System.out.println("Введите число");
 
-        int a = in.nextInt();
+        int number = in.nextInt();
+        int sum = 0;
 
-        int volume = a * a * a;
-        int square = 6 * a * a;
-        System.out.println(volume + " " + square);
+        while (number!=0) {
+            sum+=number%10;
+            number/=10;
+        }
+        System.out.println(sum);
+
+
+
+    }
+}
+
 
 
 
@@ -22,5 +32,5 @@ public class Stepik {
 //        System.out.println(sum);
 //        System.out.println(literal);
 
-    }
-}
+//    }
+

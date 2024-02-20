@@ -25,7 +25,12 @@ public class Homework14 {
 
     public static void main(String[] args) {
         taimer();
+        int score = 40%10;
+        System.out.println(score);
     }
+
+
+
 }
 
 
